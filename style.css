@@ -14,13 +14,16 @@
   }
   
   .logo {
-    font-size: 24px;
-    text-transform: uppercase;
-    letter-spacing: 4px;
     margin-left: auto; /* adicionar esta propriedade */
     margin-right: auto; /* adicionar esta propriedade */
   }
   
+  img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    height: 8vh;
+    width: 9vh;
+}
   nav {
     display: flex;
     justify-content: space-between; /* trocar space-around por space-between */
@@ -30,11 +33,10 @@
     height: 8vh;
   }
   main {
-    background: url("bg.jpg") no-repeat center center;
+    background: url("fundo.png") no-repeat center center;
     background-size: cover;
     height: 92vh;
   }
-  
   
   .nav-list {
     list-style: none;
@@ -52,6 +54,12 @@
     display: none;
     cursor: pointer;
   }
+
+  iframe {
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    color: #23232e;
+    opacity: 90%;
+  }
   
   .mobile-menu div {
     width: 32px;
@@ -68,7 +76,7 @@
     .nav-list {
       position: absolute;
       top: 8vh;
-      left: -117px;
+      left: -168px;
       width: 30vw;
       height: 92vh;
       background: #23232e;
